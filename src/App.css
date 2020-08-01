@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   background-color: hsl(210, 46%, 95%);
+  font-family: "Manrope", sans-serif;
 }
 
 .container {
@@ -13,6 +14,9 @@
   border-radius: 15px;
   background-color: white;
   font-size: 13px;
+  vertical-align: middle;
+  position: relative;
+  top: 200px;
 }
 
 .main_image {
@@ -37,6 +41,7 @@ h2 {
   font-size: 20px;
   background-color: white;
   margin-bottom: 5%;
+  font-weight: 700;
 }
 p {
   background-color: white;
@@ -68,11 +73,107 @@ span {
   display: block;
 }
 
-.onclick > span,
-a {
-  position: fixed;
-  bottom: 65%;
-  right: 17%;
+.onclick {
+  padding: 1%;
+  position: absolute;
+  bottom: 25%;
+  right: 1%;
   background-color: hsl(217, 19%, 35%);
   color: white;
+  width: 25%;
+  border-radius: 10px;
+}
+
+.link {
+  background-color: hsl(217, 19%, 35%);
+  text-decoration: none;
+  color: white;
+  margin-left: 5%;
+  width: 100%;
+}
+
+.share-text {
+  background-color: hsl(217, 19%, 35%);
+  color: white;
+}
+
+@media (max-width: 426px) {
+  .container {
+    width: 90%;
+    display: block;
+    height: 98vh;
+    position: relative;
+    top: 50px;
+  }
+
+  .main_image {
+    width: 100%;
+    height: 40vh;
+    border-radius: 15px 15px 0 0;
+  }
+
+  section {
+    width: 80%;
+    margin-top: 10%;
+  }
+  p {
+    color: hsl(214, 17%, 51%);
+    line-height: 21px;
+  }
+  .button_style {
+    position: relative;
+    bottom: 40px;
+    display: block;
+  }
+  .onclick {
+    width: 63.5vh;
+    transform: translate(38px, 40px);
+    height: 0vh;
+    border-radius: 0 0 10px 10px;
+    padding: 90%;
+    background-color: hsl(217, 19%, 35%);
+    display: block;
+  }
+
+  .share-text {
+    width: 100%;
+    margin-left: 7%;
+  }
+  .link {
+    width: 100%;
+    margin-left: 7%;
+  }
+}
+
+@media (max-width: 376px) {
+  .onclick {
+    width: 56vh;
+    transform: translate(34px, 40px);
+    height: 0vh;
+    border-radius: 0 0 10px 10px;
+    padding: 90%;
+    background-color: hsl(217, 19%, 35%);
+    display: block;
+  }
+}
+
+@media (max-width: 321px) {
+  .onclick {
+    width: 48vh;
+    transform: translate(29px, 40px);
+    height: 0vh;
+    border-radius: 0 0 10px 10px;
+    padding: 90%;
+    background-color: hsl(217, 19%, 35%);
+    display: block;
+  }
+
+  .share-text {
+    width: 100%;
+    margin-left: 3%;
+  }
+  .link {
+    width: 100%;
+    margin-left: 3%;
+  }
 }
